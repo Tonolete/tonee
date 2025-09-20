@@ -1,0 +1,73 @@
+section.customizador {
+  position: relative;
+  overflow: hidden;
+  background: url("img/building.png") center/cover no-repeat;
+  color: #fff; /* garanta contraste */
+}
+section.customizador::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,.28); /* leve overlay p/ legibilidade */
+}
+section.customizador > * { position: relative; } /* mantém texto acima do overlay */
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h2 {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.hero h3 {
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+.hero span {
+    color: #999;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
