@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário para venda de terreno</title>
+    <link rel="icon" type="image/x-icon" href="logo.png" />
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -123,7 +124,7 @@
             </select>
         </div>
         <label for="nome">Metragem (em metros quadrados) construído(caso tenha, por favor colocar):</label>
-            <input type="text" id="metragem" name="metragem" >m²
+            <input type="text" id="metragemm" name="metragemm" >m²
         </div>
         <div class="form-group">
             <label for="quarto">SQL</label>
@@ -149,7 +150,7 @@
             });
             
             // Envia para o Google Sheets (substitua com seu URL de script)
-            const scriptURL = 'huujjj';
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzUmZTThsaN4MmPcuRgi94ca2RW5y3Q64aiQ1Q2_zqD2O0nrpSoNzyZ_MyQ_JuQpfpa1g/exec';
             
             fetch(scriptURL, {
                 method: 'POST',
